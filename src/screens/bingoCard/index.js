@@ -7,22 +7,23 @@ import {
 } from 'react-native';
 import styles from './styles.js';
 
-const SavedGame = (props) => {
-
-  const saves = props.saves;
-
+const bingoCard = (props) => {
   return (
     <View style={styles.container}>
       {/* Image */}
       <Image
-        source = {require('../../../assets/images/cardBlur.jpg')}
+        source = {require('../../../assets/images/card.jpeg')}
         style={styles.image}
       />
+
       {/* Image Caption */}
-      <Text style= {styles.imageCaption}> {saves.gameSave} </Text>
+      <Text style= {styles.imageCaption}> Card Generation date </Text>
+      {/* Caption */}
+      <Text style= {styles.caption}>Example Text/Description.</Text>
+
     </View>
 
   );
 };
 
-export default SavedGame;
+export default bingoCard;

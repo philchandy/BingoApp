@@ -3,16 +3,24 @@ import {
   View,
   Text,
   ImageBackground,
-  Pressable
+  Pressable,
+  FlatList,
 } from 'react-native';
 
+import scrollableList from '../../../assets/data/scrollableList'
+import SavedGame from '../../components/Card'
+
 import styles from './styles'
+
+
 
 const saveScreen = (props) => {
   return (
     <View>
-      <Text style={styles.title}>Saved game states</Text>
-      <Text style={styles.subtitle}>Implement backend to save old games to a database</Text>
+      <FlatList
+        data={scrollableList}
+        renderItem={({item}) => <SavedGame saves ={item} />}
+      />
     </View>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import HomeScreen from '../screens/home';
-import Post from '../components/Card';
+import bingoCard from '../screens/bingoCard';
 import saveScreen from '../screens/saves';
 import Maps from '../screens/GoogleMaps';
 
@@ -30,7 +30,7 @@ const HomeTabNavigator = (props) => {
       />
       <Tab.Screen
         name = {'Bingo'}
-        component={Post}
+        component={bingoCard}
         options ={{
           tabBarIcon: ({color : string}) => (
             <Feather name="edit-2" size={25} color={'#f15454'}/>

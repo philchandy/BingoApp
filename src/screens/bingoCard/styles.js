@@ -6,17 +6,12 @@ const styles = StyleSheet.create ({
   },
   image: {
     width: '100%',
-    height: 400,
+    height: '80%',
     borderRadius: 10,
   },
   imageCaption: {
-    fontWeight: 'bold',
+    marginVertical: 10,
     color: 'gray',
-    alignContent: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    fontSize: 15,
-    marginTop: 10
   },
   caption: {
     fontSize: 18,
